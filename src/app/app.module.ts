@@ -8,6 +8,7 @@ import { HomeComponent } from './Pages/home/home.component';
 import { AboutComponent } from './Pages/about/about.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { NotesComponent } from './Components/notes/notes.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotesComponent } from './Components/notes/notes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
