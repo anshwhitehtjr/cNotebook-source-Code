@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,12 +9,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderComponent implements OnInit {
   @Input() title: string;
   @Input() mode: string;
-  @Input() activeController: string;
-  constructor () {
+  @Input() home: string;
+  @Input() about: string;
+  @Input() contact: string;
 
-  }
+  constructor () { }
 
   ngOnInit(): void {
+    console.log(location.pathname);
   }
 
 }
